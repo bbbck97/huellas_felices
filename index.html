@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellas Felices - Portal de Adopción</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- 1. COMPONENTE: Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-heart-fill text-danger me-2"></i>Huellas Felices
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#adopcion">Adopción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#consejos">Consejos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabecera armada con UTILIDADES (Spacing, Typography, Flex) - NO es un componente -->
+    <div id="inicio" class="container text-center py-5 mt-5">
+        <i class="bi bi-house-heart display-1 text-primary mb-3"></i>
+        <h1 class="display-5 fw-bold">Encuentra a tu compañero ideal</h1>
+        <p class="lead text-muted mx-auto" style="max-width: 600px;">
+            Cientos de mascotas buscan un hogar lleno de amor. Explora nuestra lista de adopción y cambia una vida hoy.
+        </p>
+    </div>
+
+    <!-- 2. COMPONENTE: Cards (Tarjetas) -->
+    <div id="adopcion" class="container py-5">
+        <h2 class="text-center mb-5">Mascotas Esperando un Hogar</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/id/237/600/400" class="card-img-top" alt="Cachorro negro">
+                    <div class="card-body">
+                        <h5 class="card-title">Max</h5>
+                        <p class="card-text">Labrador de 8 meses. Es extremadamente juguetón y se lleva excelente con
+                            niños pequeños.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/id/40/600/400" class="card-img-top" alt="Gato">
+                    <div class="card-body">
+                        <h5 class="card-title">Luna</h5>
+                        <p class="card-text">Gata mestiza de 2 años. Tranquila, muy independiente y amante de los
+                            rincones soleados.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://picsum.photos/id/1062/600/400" class="card-img-top" alt="Perro pug">
+                    <div class="card-body">
+                        <h5 class="card-title">Rocco</h5>
+                        <p class="card-text">Mestizo de tamaño mediano, 4 años. Muy guardián y entrenado en comandos
+                            básicos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. COMPONENTE: Accordion (Acordeón para los consejos) -->
+    <div id="consejos" class="container py-5 mb-5">
+        <h2 class="text-center mb-5">Primeros Días en Casa</h2>
+        <div class="accordion" id="accordionConsejos">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1. Prepara un espacio propio
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionConsejos">
+                    <div class="accordion-body">
+                        Tu mascota necesita un rincón tranquilo con su cama, agua fresca y comida para sentirse segura
+                        al llegar a su nuevo entorno.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2. Establece una rutina fija
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionConsejos">
+                    <div class="accordion-body">
+                        Mantener horarios fijos para los paseos, las comidas y los momentos de juego ayuda a reducir la
+                        ansiedad del animal.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3. Paciencia y refuerzo positivo
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionConsejos">
+                    <div class="accordion-body">
+                        Los accidentes pueden ocurrir. Premia siempre las buenas conductas en lugar de castigar los
+                        errores iniciales.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Ir Arriba -->
+    <button id="btnTop"
+    class="btn position-fixed bottom-0 end-0 m-4 z-3 rounded-circle shadow d-flex align-items-center justify-content-center d-none"
+    style="width: 50px; height: 50px; background-color: #ff99cc; border: none; color: white;">
+    <i class="bi bi-arrow-up fs-5"></i>
+    </button>
+
+    <!-- JS de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Archivo para la práctica de los alumnos -->
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
