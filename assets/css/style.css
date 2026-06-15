@@ -1,0 +1,43 @@
+/* style.css */
+
+/* Fondo general de la página */
+body { 
+    background-color: #f3eaec; 
+    color: #5d4037; /* Mantengo un tono café suave para el texto, hace mejor contraste */
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Esto asegura que el menú esté siempre al centro */
+.navbar-nav {
+    width: 100%;
+    justify-content: center;
+}
+
+/* Ajustes de tarjetas para que combinen con el fondo */
+.card { 
+    border: none; 
+    border-radius: 20px; 
+    background-color: #ffffff; /* Las tarjetas blancas resaltan sobre el fondo rosa */
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+/* Botón de subida (Ir arriba) */
+#btnTop {
+    background-color: #d6175a !important; /* Color a tono con la marca */
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #ffa3b2 !important;
+    color: #5d4037 !important;
+}
+
+/* Títulos y textos */
+h1, h2 {
+    color: #020202;
+}
