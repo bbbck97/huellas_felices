@@ -29,4 +29,4 @@ Ejmplo de uso: git status
 `+` y seleccionar `Git Bash`.
 
 **2. Programa Git Bash externo:**
-* Abrir el programa `Git Bash`ya instalado desde el menú de inicio de tu PC.
+* Abrir el programa `Git Bash`ya instalado desde el menú de inicio de tu PC.# dulce-morada-pasteleria
